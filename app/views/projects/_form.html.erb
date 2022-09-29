@@ -16,10 +16,17 @@
     <%= form.text_field :title %>
   </div>
 
+
+
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.text_area :description %>
   </div>
+  <div class="field">
+  <%= form.label :images  %>
+  <%= form.file_field :images %>
+<div>
+<br>
 
     <div>
       <%= form.number_field :user_id, id: :project_user_id, value: current_user.id, type: :hidden %>
